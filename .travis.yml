@@ -8,3 +8,9 @@ script:
 branches:
   only:
     - main
+deploy:
+  provider: heroku
+  api_key:
+    secure: ADD_API_KEY_HERE
+  app:
+    main: snake-snack-server
