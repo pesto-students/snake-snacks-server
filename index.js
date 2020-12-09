@@ -23,6 +23,6 @@ app.use(express.json());
 // Route Middleware
 app.use('/api/user', authRoute);
 
-app.listen(process.env.PORT, () =>
-  console.log('Server booted up successfully'),
-);
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => console.log('Server booted up successfully'));
