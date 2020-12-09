@@ -1,7 +1,7 @@
 const Joi = require('joi');
 const joi = require('joi');
 
-const registrationValidation = (requestBody) => {
+const registrationRequestValidation = (requestBody) => {
   const schema = Joi.object({
     username: Joi.string().max(10).required(),
     email: Joi.string().required().email(),
@@ -11,4 +11,4 @@ const registrationValidation = (requestBody) => {
   return schema.validate(requestBody);
 };
 
-module.exports = { registrationValidation };
+module.exports = { registrationRequestValidation };
