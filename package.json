@@ -15,5 +15,16 @@
   "bugs": {
     "url": "https://github.com/pesto-students/snake-snacks-server/issues"
   },
-  "homepage": "https://github.com/pesto-students/snake-snacks-server#readme"
+  "homepage": "https://github.com/pesto-students/snake-snacks-server#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "joi": "^17.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
 }
