@@ -11,4 +11,13 @@ const registrationRequestValidation = (requestBody) => {
   return schema.validate(requestBody);
 };
 
-module.exports = { registrationRequestValidation };
+const loginRequestValidation = (requestBody) => {
+  const schema = Joi.object({
+    email: Joi.string().required().email(),
+    password: Joi.string().required(),
+  });
+
+  return schema.validate(requestBody);
+};
+
+module.exports = { registrationRequestValidation, loginRequestValidation };
