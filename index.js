@@ -1,5 +1,7 @@
 const express = require('express');
 
+const cors = require('cors');
+
 const app = express();
 
 const mongoose = require('mongoose');
@@ -18,6 +20,7 @@ mongoose.connect(
 );
 
 // middleware
+app.use(cors());
 app.use(express.json());
 
 // Route Middleware
