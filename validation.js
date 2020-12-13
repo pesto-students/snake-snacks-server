@@ -1,5 +1,4 @@
 const Joi = require('joi');
-const joi = require('joi');
 
 const registrationRequestValidation = (requestBody) => {
   const schema = Joi.object({

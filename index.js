@@ -9,6 +9,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 
 const authRoute = require('./routes/auth');
+const scoreRoute = require('./routes/scores');
 
 dotenv.config();
 
@@ -25,6 +26,7 @@ app.use(express.json());
 
 // Route Middleware
 app.use('/api/user', authRoute);
+app.use('/api/score', scoreRoute)
 
 const port = process.env.PORT || 3000;
 
